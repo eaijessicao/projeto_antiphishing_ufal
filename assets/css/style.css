@@ -45,3 +45,98 @@ margin: 0 auto;
 figure > img {
     width: 100%;
 }
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid white;
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+  
+ 
+  
+  .desconto {
+    color: #ff0000;
+    font-weight: bold;
+  }
+  
+  .economize {
+    color: #00ff00;
+  }
+  
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+
+  .section img {
+    max-width: 250px;
+  }
+
+
+
+  /* modal  */
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #800080;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .close:hover {
+    background-color: #6a006a;
+  }
+
+  .login-button {
+    background-color: #800080;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .login-button:hover {
+    background-color: #6a006a;
+  }

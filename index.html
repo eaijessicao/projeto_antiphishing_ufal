@@ -13,7 +13,8 @@
           <ul>
             <li><a href="#">Página Inicial</a></li>
             <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
+            <li onclick="openModal()"><a href="#">Login</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -27,19 +28,76 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vel justo turpis. Sed consectetur turpis vel risus maximus, nec ultricies ante accumsan.</p>
         </article>
     
-        <section>
-          <h3>Sessão 1</h3>
-          <p>Conteúdo da sessão 1.</p>
+        <section class="container">
+          <div class="section">
+            <span class="desconto">-72%</span>
+            <img src="./assets/img/xbox_series_s.webp" alt="">
+            <h3>Xbox<h3>
+              <p>blablablabla</p>
+              <span class="economize"></span>
+          </div>
+          <div class="section">
+            <span class="desconto">-72%</span>
+            <img src="./assets/img/xbox_series_s.webp" alt="">
+            <h3>Xbox<h3>
+              <p>blablablabla</p>
+              <span class="economize"></span>
+          </div>
+          <div class="section">
+            <span class="desconto">-72%</span>
+            <img src="./assets/img/xbox_series_s.webp" alt="">
+            <h3>Xbox<h3>
+              <p>blablablabla</p>
+              <span class="economize"></span>
+          </div>
+          <div class="section">
+            <span class="desconto">-72%</span>
+            <img src="./assets/img/xbox_series_s.webp" alt="">
+            <h3>Xbox<h3>
+              <p>blablablabla</p>
+              <span class="economize"></span>
+          </div>
+          <div class="section">
+            <span class="desconto">-72%</span>
+            <img src="./assets/img/xbox_series_s.webp" alt="">
+            <h3>Xbox<h3>
+              <p>blablablabla</p>
+              <span class="economize"></span>
+          </div>
+          <div class="section">
+            <span class="desconto">-72%</span>
+            <img src="./assets/img/xbox_series_s.webp" alt="">
+            <h3>Xbox<h3>
+              <p>blablablabla</p>
+              <span class="economize"></span>
+          </div>
+          
         </section>
-    
-        <section>
-          <h3>Sessão 2</h3>
-          <p>Conteúdo da sessão 2.</p>
-        </section>
+        <figure>
+          <img src="./assets/img/anuncio2.png" alt="anuncio principal">
+      </figure>
+      
+        <!-- modal -->
+      <div id="login-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <form>
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password">
+            <br>
+            <input type="submit" value="Entrar">
+          </form>
+        </div>
+      </div>
+
       </main>
     
       <footer>
         <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
       </footer>
+      <script src="./assets/js/modal.js"></script>
 </body>
 </html>
